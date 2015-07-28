@@ -1,0 +1,211 @@
+package pt.tecnico.bubbledocs.domain;
+
+class BubbleDocs{
+	Integer spreadCount;
+}
+
+class User{
+	String username;
+	String name;
+	String password;
+	String email;
+}
+
+class userRoot extends User;
+
+class Session;
+
+class LToken{
+	String identifier;
+	DateTime logindate;
+}
+
+class Spreadsheet{  
+	Integer sID;
+	String name;
+	DateTime creationDate;
+	Integer linhastotais;
+	Integer colunastotais;
+}
+
+class Cell{
+	boolean prot;
+	Integer linha;
+	Integer coluna;
+}
+
+class Conteudo;
+
+class Parametro;
+
+class ArgRef extends Parametro{
+	Integer reflinha;
+	Integer refcoluna;
+}
+
+class ArgLit extends Parametro{
+	Integer value;
+}
+
+class CellFunc extends Conteudo;
+
+class CellInteger extends Conteudo{
+	Integer value;
+}
+
+class CellRef extends Conteudo{
+	Integer RefLine;
+	Integer RefCol;
+}
+
+class BinFunc extends CellFunc;
+
+
+class FuncMUL extends BinFunc;
+
+class FuncADD extends BinFunc;
+
+class FuncSUB extends BinFunc;
+
+class FuncDIV extends BinFunc;
+
+relation DomainRootHasBubbledocsApplication {
+  .pt.ist.fenixframework.DomainRoot playsRole root;
+  BubbleDocs playsRole bubbledocs;
+}
+
+relation BubbleDocsHasrootUser{
+	BubbleDocs playsRole bubbledoc{
+		multiplicity 1;
+		}
+	userRoot playsRole rootUser{
+		multiplicity 1;
+		}
+}
+ 
+
+relation CellRefHasCell{
+	Cell playsRole cellr{
+		multiplicity 1;
+	}
+	CellRef playsRole rcell{
+		multiplicity *;
+	}
+}
+
+relation ArgRefHasCell{
+	Cell playsRole cellra{
+		multiplicity 1;
+	}
+	ArgRef playsRole acell{
+		multiplicity *;
+	}
+}
+relation BubbleDocsHasUsers{
+	BubbleDocs playsRole bubbledocs{
+		multiplicity 1;
+	}
+	User playsRole user{
+		multiplicity *;
+	}
+}
+
+relation UserHasToken{
+	LToken playsRole ltoken{
+		multiplicity 1;
+	}
+	User playsRole user{
+		multiplicity 1;
+	}
+}
+
+relation SessionHasTokens{
+	Session playsRole session{
+		multiplicity 1;
+	}
+	LToken playsRole tokens{
+		multiplicity *;
+	}
+}
+
+relation BubbleDocsHasSession{
+	BubbleDocs playsRole bubbledocs{
+		multiplicity 1;
+	}
+	Session playsRole session{
+		multiplicity 1;
+	}
+}
+
+relation BubbleDocsHasSpreadsheets{
+	BubbleDocs playsRole bubbledocs{
+		multiplicity 1;
+	}
+	Spreadsheet playsRole spreadsheets{
+		multiplicity *;
+	}
+	
+}
+
+relation UserRSpreadsheets{
+	User playsRole Ruser{
+		multiplicity *;
+	}
+	Spreadsheet playsRole Rspreadsheet{
+		multiplicity *;
+	}
+}
+
+relation UserWSpreadsheets{
+	User playsRole Wuser{
+		multiplicity *;
+	}
+	Spreadsheet playsRole Wspreadsheet{
+		multiplicity *;
+	}
+}
+
+relation UserCreatesSpreadsheet{
+	User playsRole Cuser{
+		multiplicity 1;
+	}
+	Spreadsheet playsRole Cspreadsheet{
+		multiplicity *;
+	}
+}
+
+relation SpreadsheetHasCells{
+	Spreadsheet playsRole spreadsheet{
+		multiplicity 1;
+	}
+	Cell playsRole cell{
+		multiplicity *;
+	}
+}
+
+relation CellHasConteudo{
+	Cell playsRole cell{
+		multiplicity 1;
+	}
+	Conteudo playsRole conteudo{
+		multiplicity 1;
+	}
+}
+
+relation BinFuncHasParametro1{
+	BinFunc playsRole binfunc1{
+		multiplicity 1;
+	}
+	Parametro playsRole parametro1{
+		multiplicity 1;
+	}
+}
+
+relation BinFuncHasParametro2{
+	BinFunc playsRole binfunc2{
+		multiplicity 1;
+	}
+	Parametro playsRole parametro2{
+		multiplicity 1;
+	}
+}

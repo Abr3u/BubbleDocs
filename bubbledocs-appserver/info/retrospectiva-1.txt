@@ -1,0 +1,51 @@
+Engenharia de Software 2014-2015
+Grupo 26, Retrospectiva 1
+Semana 1:
+
+TABELA
+
+
+| Member | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Tasks | Completed |
+| ------ | --- | --- | --- | --- | --- | --- | --- | ----- | --------- |
+| Alex   | 0 | 3 | 2 | 3 | 0 | 6 | 3 | 31,25,26,35,36,42 | ALL + [55] & [57] |
+| Pedro  | 0 | 3 | 2 | 3 | 0 | 6 | 3 | 27,28,29,30,33,34 | ALL + [55] & [57] |
+| Ricardo| 0 | 3 | 2 | 3 | 0 | 6 | 3 | 32,25,26,37,38,45,46 | ALL + [55] & [57] |
+
+
+
+No início da semana, o objectivo era implementar a camada Integration. Para isso seria
+necessário actualizar alguns dos serviços actuais e os respectivos testes.
+O objectivo foi cumprido. Visto que este foi alcançado relativamente cedo, tivemos tempo
+para implementar algumas funcionalidades de SD.
+
+Como se tratava do início da implementação de um dos requisitos de SD, decidimos
+trabalhar em conjunto em todas as vertentes para um mais fácil entendimento da situação.
+Daí as issues indicadas como completas serem “story” e não uma “task”.
+
+Em suma, foi uma primeira semana de trabalho bem sucedida visto que os nossos objectivos
+foram cumpridos e ultrapassados.
+
+________________________________________________________________________________________________
+Semana 2:
+
+TABELA
+
+| Member | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Tasks | Completed |
+| ------ | --- | --- | --- | --- | --- | --- | --- | ----- | --------- |
+| Alex   | 3 | 3 | 7,5 | 3 | 0 | 3 | - | 60,63,35,36,52 | - |
+| Pedro  | 3 | 3 | 7,5 | 3 | 0 | 3 | - | 60,63,40,48,52 | - |
+| Ricardo| 3 | 3 | 7,5 | 3 | 0 | 3 | - | 60,63,39,46,52 | - |
+
+Para a semana seguinte, o nosso objectivo é ter uma versão muito próxima do que será a
+final.
+(Daí o número de horas para Domingo ser indeterminado, pois será muito dependente do trabalho realizado
+até à data. Até 6ª feira deverá ser possível estimar este campo.)
+
+Em relação às tarefas de SD, vamos seguir o mesmo método de trabalhar em conjunto visto
+que este trouxe as vantagens esperadas na semana anterior.
+
+Cada elemento do grupo será responsável por implementar um dos restantes 3 novos
+serviços do BubbleDocs e os seus respectivos testes.
+
+Vamos procurar implementar os testes de sistema em conjunto visto ser algo relativamente
+novo para nós, onde é relevante todos perceberem o seu funcionamento

@@ -1,0 +1,16 @@
+Engenharia de Software 2014-2015
+Grupo 26, Retrospectiva 0
+Semana 0:
+
+TABELA
+
+
+| Member | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Tasks | Completed |
+| ------ | --- | --- | --- | --- | --- | --- | --- | ----- | --------- |
+| Alex   | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
+| Pedro  | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
+| Ricardo| 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
+
+
+
+Semana dedicada apenas a conceptualizar e entender o problema proposto

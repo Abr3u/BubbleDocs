@@ -1,0 +1,35 @@
+﻿Engenharia de Software 2014-2015
+Grupo 26, Retrospectiva 2
+Semana 2:
+
+TABELA SEMANA PASSADA
+
+| Member | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Tasks | Completed |
+| ------ | --- | --- | --- | --- | --- | --- | --- | ----- | --------- |
+| Alex   | 3 | 3 | 7,5 | 3 | 0 | 3 | - | 60,63,35,36,52 | all - 36 |
+| Pedro  | 3 | 3 | 7,5 | 3 | 0 | 3 | - | 60,63,40,48,52 | all |
+| Ricardo| 3 | 3 | 7,5 | 3 | 0 | 3 | - | 60,63,39,46,52 | all |
+
+
+
+Os objectivos da semana anterior eram:
+- acabar o requisito SD-ID A; 
+- começar e acabar o SD-STORE B;
+- acabar os requisitos de ES
+
+Os objectivos foram practicamente todos atingidos visto que apenas falta realizar o ficheiro de teste de um
+serviço. Os 2 requisitos de SD foram implementados na totalidade.
+
+________________________________________________________________________________________________
+Semana 3:
+
+TABELA
+
+| Member | Mon | Tue | Wed | Thu | Fri | Sat | Sun | Tasks | Completed |
+| ------ | --- | --- | --- | --- | --- | --- | --- | ----- | --------- |
+| Alex   | 4 | 4 | * | 0 | 0 | 0 | 0 | 68,36 | - |
+| Pedro  | 4 | 4 | * | 0 | 0 | 0 | 0 | 68,36 | - |
+| Ricardo | 4 | 4 | * | 0 | 0 | 0 | 0 | 68,36 | - |
+
+Para a semana seguinte, o nosso objectivo é acabar os testes necessários tanto de ES como de SD.
+Esperamos alcançá-lo até 3a feira, daí não termos definido horas para 4a.

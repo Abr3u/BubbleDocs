@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- http://maven.apache.org/pom.html#Quick_Overview -->
+
+	<groupId>pt.sd.bubbledocs</groupId>
+	<artifactId>client</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>${project.artifactId}</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<mainclass>pt.sd.client.BdClient</mainclass>
+	</properties>
+	
+		<dependencies>
+		
+			<!-- JMockit - must appear before JUnit -->
+			<dependency>
+				<groupId>org.jmockit</groupId>
+				<artifactId>jmockit</artifactId>
+				<version>1.16</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- JUNIT API -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+			<groupId>pt.tecnico.ulisboa.sdis.id</groupId>
+			<artifactId>id-ws-cli</artifactId>
+			<version>1.1-SNAPSHOT</version>
+			</dependency>
+			
+			<dependency>
+			<groupId>pt.ulisboa.tecnico.sdis.store.ws</groupId>
+			<artifactId>store-ws-cli</artifactId>
+			<version>1.1-SNAPSHOT</version>
+			</dependency>
+
+		</dependencies>
+
+
+		<build>
+			<plugins>
+				
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>1.3.2</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>java</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<killAfter>-1</killAfter><!-- to prevent deprecation warning -->
+						<mainClass>${mainclass}</mainClass>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>appassembler-maven-plugin</artifactId>
+					<version>1.9</version>
+					<configuration>
+						<programs>
+							<program>
+								<mainClass>${mainclass}</mainClass>
+								<id>bdcli</id>
+							</program>
+						</programs>
+					</configuration>
+				</plugin>
+			</plugins>
+			
+		</build>
+
+</project>
